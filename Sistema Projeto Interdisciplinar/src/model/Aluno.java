@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Grupo PI
@@ -8,7 +10,8 @@ public class Aluno extends Usuario {
 
     private int id;
     private int ra;
-
+    private ArrayList<Turma> lstTurmas;
+    
     public Aluno(int id, int ra, String nome, String email, String senha) {
         super(nome, email, senha);
         this.id = id;
